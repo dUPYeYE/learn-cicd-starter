@@ -13,7 +13,7 @@ import (
 	"github.com/joho/godotenv"
 	_ "github.com/tursodatabase/libsql-client-go/libsql"
 
-	"github.com/bootdotdev/learn-cicd-starter/internal/database"
+	"github.com/dUPYeYE/learn-cicd-starter/internal/database"
 )
 
 type apiConfig struct {

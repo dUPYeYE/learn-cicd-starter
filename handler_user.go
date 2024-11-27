@@ -9,8 +9,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/bootdotdev/learn-cicd-starter/internal/database"
 	"github.com/google/uuid"
+
+	"github.com/dUPYeYE/learn-cicd-starter/internal/database"
 )
 
 func (cfg *apiConfig) handlerUsersCreate(w http.ResponseWriter, r *http.Request) {
@@ -72,7 +73,6 @@ func generateRandomSHA256Hash() (string, error) {
 }
 
 func (cfg *apiConfig) handlerUsersGet(w http.ResponseWriter, r *http.Request, user database.User) {
-
 	userResp, err := databaseUserToUser(user)
 	if err != nil {
 		log.Println(err)
